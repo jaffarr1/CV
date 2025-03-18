@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/Person">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jaffar Mahdi - CV</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --main-bg: #ffffff;
+      --sidebar-bg: #1f1f2e;
+      --primary: #4dabf7;
+      --text-dark: #222;
+      --text-muted: #666;
+      --border-color: #eee;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f2f4f8;
+      color: var(--text-dark);
+      line-height: 1.6;
+    }
+
+    .cv-container {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      max-width: 1000px;
+      margin: 50px auto;
+      background: var(--main-bg);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      background: var(--sidebar-bg);
+      color: #fff;
+      padding: 40px 30px;
+    }
+
+    .sidebar h1 {
+      font-size: 26px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .sidebar h2 {
+      font-size: 14px;
+      font-weight: 400;
+      color: var(--primary);
+      margin-bottom: 30px;
+    }
+
+    .sidebar-section {
+      margin-bottom: 30px;
+    }
+
+    .sidebar-section h3 {
+      font-size: 13px;
+      color: var(--primary);
+      margin-bottom: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .sidebar-section p,
+    .sidebar-section a {
+      font-size: 14px;
+      color: #ddd;
+      margin-bottom: 8px;
+      text-decoration: none;
+    }
+
+    .main {
+      padding: 40px;
+      background: #fff;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .section h3 {
+      font-size: 20px;
+      color: var(--text-dark);
+      border-bottom: 2px solid var(--primary);
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      font-weight: 600;
+    }
+
+    .entry {
+      margin-bottom: 20px;
+    }
+
+    .entry-title {
+      font-weight: 600;
+      font-size: 16px;
+    }
+
+    .entry-meta {
+      font-size: 14px;
+      color: var(--primary);
+      margin-bottom: 5px;
+    }
+
+    .entry-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+
+    @media screen and (max-width: 768px) {
+      .cv-container {
+        grid-template-columns: 1fr;
+      }
+
+      .sidebar, .main {
+        padding: 30px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="cv-container">
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h1 itemprop="name">Jaffar Mahdi</h1>
+    <h2 itemprop="jobTitle">Mobile App Developer</h2>
+
+    <div class="sidebar-section">
+      <h3>Contact</h3>
+      <p><a href="mailto:jaffarmahdi18@gmail.com" itemprop="email">jaffarmahdi18@gmail.com</a></p>
+      <p><span itemprop="telephone">0306 3740255</span></p>
+      <p><time itemprop="birthDate" datetime="2002-12-01">01 Dec 2002</time></p>
+      <p itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        <span itemprop="addressLocality">Sargodha</span>, 
+        <span itemprop="addressRegion">Punjab</span>, 
+        <span itemprop="addressCountry">Pakistan</span>
+      </p>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Skills</h3>
+      <p itemprop="knowsAbout">Kotlin, Java, MVVM, XML</p>
+      <p itemprop="knowsAbout">React Native, Hooks, APIs</p>
+      <p itemprop="knowsAbout">Firebase, Room DB, Retrofit</p>
+      <p itemprop="knowsAbout">Android Studio, Postman</p>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Interests</h3>
+      <p itemprop="knowsAbout">Social Work (Lifecare Society)</p>
+      <p itemprop="knowsAbout">Automobile Mechanics</p>
+      <p itemprop="knowsAbout">Pet Enthusiast</p>
+    </div>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <div class="section">
+      <h3>About Me</h3>
+      <p>
+        Passionate and detail-oriented Android Developer focused on creating elegant, performant, and user-friendly mobile applications. I specialize in Kotlin and have worked across startups and multinational environments, applying modern design patterns and scalable architectures.
+      </p>
+    </div>
+
+    <div class="section">
+      <h3>Work Experience</h3>
+
+      <div class="entry">
+        <div class="entry-title">Android Developer – Preesoft, Lahore</div>
+        <div class="entry-meta">Feb 2025 – Present</div>
+        <div class="entry-desc">Leading mobile development with Kotlin, implementing Firebase, Room DB, and optimized UI patterns.</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-title">Android Developer – Enfotrix, Sargodha</div>
+        <div class="entry-meta">Sep 2024 – Feb 2025</div>
+        <div class="entry-desc">Delivered scalable solutions using MVVM, integrated FCM notifications, and APIs with Retrofit.</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-title">Software Engineer – Gosign, Germany</div>
+        <div class="entry-meta">Nov 2024 – Dec 2024</div>
+        <div class="entry-desc">Remote collaboration on AI-based mobile solutions within an international team.</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-title">Junior Android Developer – SORIIC Software</div>
+        <div class="entry-meta">Jan 2024 – Jun 2024</div>
+        <div class="entry-desc">Contributed to multiple apps using Kotlin and Java; gained hands-on experience in clean architecture.</div>
+      </div>
+
+      <div class="entry">
+        <div class="entry-title">Junior Android Developer – Bytes IT Centre</div>
+        <div class="entry-meta">Oct 2023 – Dec 2023</div>
+        <div class="entry-desc">Supported development tasks in Java, worked under mentorship to strengthen Android fundamentals.</div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h3>Education</h3>
+      <div class="entry">
+        <div class="entry-title">Bachelor in Computer Science – University of Sargodha</div>
+        <div class="entry-meta">Nov 2021 – Present</div>
+      </div>
+      <div class="entry">
+        <div class="entry-title">FSc Pre-Engineering – Airbase Inter College</div>
+        <div class="entry-meta">Mar 2019 – Sep 2021</div>
+      </div>
+    </div>
+  </main>
+</div>
+
+</body>
+</html>
